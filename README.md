@@ -8,11 +8,11 @@ In order to determine the best "Green" stocks to invest in, a workbook was creat
 
 ### Initial Code
 
-For the first draft of this macro a loop was created that cycled through each ticker being analyzed. For each ticker the macro would loop through all the data and find the annualized total volume traded, beginning price, and ending price. The prices would be used to calculate the return for each ticker. The spreadsheet would then be formatted to make it more easily readable.
+For the first draft of this macro a loop was created that cycled through each ticker being analyzed. For each ticker the macro looped through all the data and found the annualized total volume traded, beginning price, and ending price. The prices were used to calculate the return for each ticker. The spreadsheet was then formatted to make it more easily readable.
 
 Image 1: Initial macro results and runtime
 
-![2018 initial results and runtime](https://github.com/TravisTornquist/Kickstarter-Analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png?raw=true)
+![2018 initial results and runtime](https://github.com/TravisTornquist/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
 The macro ran in a little over half a second.
 
@@ -22,7 +22,7 @@ For the refactored code, a variable was created to act as an index relating to e
 
 Image 2: Refactored macro results and runtime
 
-![Outcomes Based on Goal](https://github.com/TravisTornquist/Kickstarter-Analysis/blob/main/Resources/Outcomes_vs_Goals.png?raw=true)
+![2018 refactored results and runtime](https://github.com/TravisTornquist/stock-analysis/blob/main/Resources/VBA_Challenge_2018_Refactored.png)
 
 The macro ran in less than a tenth of a second.
 
@@ -35,4 +35,4 @@ Refactoring code can be a valuable step in the development process. For complica
 
 ### Refactoring this Stock Analysis
 
-The initial macro for this stock analysis ran in a little over half of a second. After refactoring the code runs nearly half a second faster. The benefit of this refactor is a fairly small time savings each time the code is run. The macro is so much more efficient because it loops through the data only once rather than once for every ticker. The disadvantage of this refactor is that the time spent refactoring is far greater than the time savings. Although the new code runs more efficiently, it would have saved time in the long run just keeping the original code.
+The initial macro for this stock analysis ran in a little over half of a second. After refactoring the code runs nearly half a second faster. The benefit of this refactor is a fairly small time savings each time the code is run. The macro is so much more efficient because it loops through the data only once rather than once for every ticker. The disadvantage of this refactor is that the time spent refactoring is far greater than the time savings. Although the new code runs more efficiently, it would have saved time in the long run keeping the original code.
